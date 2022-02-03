@@ -9,7 +9,7 @@ public class Timer {
 		System.out.print(hour);
 		System.out.print(":");
 		System.out.print(minute);
-		System.out.print(":"); //25200+ 1800+45 = 27045
+		System.out.print(":");
 		System.out.println(seconds);
 
 		
