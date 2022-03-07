@@ -8,32 +8,23 @@ public class CanSpell {
 		 * set of tiles can spell the word. You might have more than one tile with the
 		 * same letter, but you can use each tile only once
 		 */
+			canSpell("h", "h");
 
-		// anagrama e formar novas palavras, aparti das palavras que ja temos.
-
-		System.out.println(canSpell(" today", "dayto"));
-		System.out.println(canSpell(" csillene", "sillence"));
-		System.out.println(canSpell(" quijibo", "jib"));
 	}
 
-	public static boolean canSpell(String a, String b) {
-
-		String word1 = a.replaceAll("\\s", "");
-		String word2 = b.replaceAll("\\s", "");
-
-		if (word1.length() != word2.length()) {
-			return false;
+	public static String canSpell(String one, String two) {
+		String word1 = "aniversario";
+		String word2 = "ani";
+		if (word1.indexOf(word2) != -1) {
+			System.out.println("The string ,  " + word1 + "  contains, the word   " + word2);
 		} else {
-
-			char c1[] = word1.toLowerCase().toCharArray();
-			char c2[] = word2.toLowerCase().toCharArray();
-			Arrays.sort(c1);
-			Arrays.sort(c2);
-			return Arrays.equals(c1, c2);
+			System.out.println("the word doesn't contain the other word. ");
 		}
+		return null;
 	}
-
 }	
+
+	
 		
 		
 		
